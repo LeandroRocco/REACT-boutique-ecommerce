@@ -19,7 +19,7 @@
     list-style: none;
     text-align: center;
     width: 70vw;
-    justify-content: end;
+    justify-content: center;
     margin-right: 1rem;
 }
 .nav-link {
@@ -27,4 +27,12 @@
     text-decoration: none;
     padding: 0.5rem 1.2rem;
     font-size: 1.4rem;
+}
+.Icono {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.Carrito {
+    height: 32px;
 }
