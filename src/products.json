@@ -2,19 +2,22 @@
     {
         "id": 1,
         "name": "Sillon Ginebra",
+        "img": "/media/sillon03.png",
         "price": 70000,
-        "stock": 5,
+        "stock": 5
     },
     {
         "id": 2,
         "name": "Mesa Pampa",
+        "img": "/media/mesa13.png",
         "price": 35000,
-        "stock": 6,
+        "stock": 6
     },
     {
         "id": 3,
         "name": "Silla Florencia",
+        "img": "/media/silla09.png",
         "price": 10000,
-        "stock": 7,
+        "stock": 7
     }
 ]
