@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Sillon Ginebra",
+        "price": 70000,
+        "stock": 5,
+    },
+    {
+        "id": 2,
+        "name": "Mesa Pampa",
+        "price": 35000,
+        "stock": 6,
+    },
+    {
+        "id": 3,
+        "name": "Silla Florencia",
+        "price": 10000,
+        "stock": 7,
+    }
+]
