@@ -9,7 +9,7 @@ function App() {
       <NavBar />
       <ItemListContainer greeting = "Bienvenidos a Boutique, sillas y sillones" />
       <div className="Desafio">
-        <h1>Desafío 4 - Clase 5 - Leandro Rocco</h1>
+        <h1>Desafío 5 - Clase 6 - Leandro Rocco</h1>
       </div>
     </div>
   );

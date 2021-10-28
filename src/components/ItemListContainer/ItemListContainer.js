@@ -1,17 +1,32 @@
-import { useState } from "react";
-import { ItemCount } from "../ItemCount/ItemCount";
+import { useEffect, useState } from "react";
+import { ItemList } from "../ItemList/ItemList";
 import './ItemListContainer.css';
+import Products from "../../Products.json";
 
 const ItemListContainer = ({ greeting }) => {
-  const [qty, setQty] = useState(0);
-  const onAdd = (selectedQty) => {
-    setQty(selectedQty);
-    console.log(`Agregaste ${selectedQty} productos`);
-  };
+  const [productos, setProductos] = useState([]);
+
+  const getData = (data) =>
+      new Promise((resolve, reject) => {
+          setTimeout(() => {
+              if (data) {
+                  resolve(data);
+              } else {
+                  reject("No se encontro nada");
+              }
+          }, 2000);
+      });
+
+  useEffect(() => {
+      getData(Products)
+          .then((res) => setProductos(res))
+          .catch((err) => console.log(err));
+
+  }, []);
   return (
     <>
       <h1 className="EstiloItemList">{greeting}</h1>
-      <ItemCount stock={20} initial={0} onAdd={onAdd} />
+      <ItemList productos={productos} />
     </>
   );
 };
