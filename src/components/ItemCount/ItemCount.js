@@ -2,6 +2,7 @@ import { useState } from "react";
 import iconoMas from "../../assets/boton-mas.png";
 import iconoMenos from "../../assets/boton-menos.png";
 import "./ItemCount.css";
+import { Link } from "react-router-dom";
 
 export function ItemCount({ stock, initial, onAdd }) {
     const [count, setCount] = useState(initial);
@@ -28,9 +29,9 @@ export function ItemCount({ stock, initial, onAdd }) {
                 </div>
                 <img onClick={quita} className="iconoMenos" src={iconoMenos} alt="#" />
             </div>
-            <button onClick={() => onAdd(count)}>
-                Agregar al carrito
-            </button>
+            <Link onClick={() => onAdd(count)}>
+                  Agregar al carrito
+            </Link>
         </div>
       </div>
     );

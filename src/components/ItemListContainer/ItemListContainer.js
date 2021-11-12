@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
-import { ItemList } from "../ItemList/ItemList";
 import './ItemListContainer.css';
+import ItemList from "../ItemList/ItemList";
+import { useEffect, useState } from "react";
 import Products from "../../Products.json";
 
-const ItemListContainer = ({ greeting }) => {
+const ItemListContainer = () => {
   const [productos, setProductos] = useState([]);
 
   const getData = (data) =>
@@ -23,9 +23,9 @@ const ItemListContainer = ({ greeting }) => {
           .catch((err) => console.log(err));
 
   }, []);
+
   return (
     <>
-      <h1 className="EstiloItemList">{greeting}</h1>
       <ItemList productos={productos} />
     </>
   );
