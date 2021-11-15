@@ -1,22 +1,17 @@
 export const ItemsMenu = [
     {
         titulo: 'Home',
-        url: '#',
+        url: '/',
         class: 'nav-link'
     },
     {
-        titulo: 'Productos',
-        url: '#',
-        class: 'nav-link'
-    },
-    {
-        titulo: 'Nosotros',
-        url: '#',
+        titulo: 'Categorias',
+        url: '/category',
         class: 'nav-link'
     },
     {
         titulo: 'Contacto',
-        url: '#',
+        url: '/contact',
         class: 'nav-link'
     },
 ]

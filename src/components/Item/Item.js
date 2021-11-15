@@ -9,13 +9,12 @@ const Item = ({ productos }) => {
             </div>
             <h3>{productos.name}</h3>
             <p>${productos.price}</p>
-            <ItemCount stock={productos.stock} initial={1} />
-            <p>{productos.stock} unidades</p>
-            <Link>
-                Ver detalles
+            <Link to={`/item/${productos.id}`}>
+                Detalles
             </Link>
+            <p>{productos.stock} unidades en stock</p>
+            <ItemCount stock={productos.stock} initial={1} />
         </div>
     );
 }
-
 export default Item;

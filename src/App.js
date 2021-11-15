@@ -12,8 +12,8 @@ function App() {
       <div className="App">
         <NavBar />
         <Switch>
-            <Route exact path="/">
-              <ItemListContainer />
+            <Route exact path="/carrito">
+              <CartWidget />
             </Route>
             <Route exact path="/category/:id">
               <ItemListContainer />
@@ -21,13 +21,12 @@ function App() {
             <Route exact path="/productos/:id">
               <ItemDetailContainer />
             </Route>
-            <Route exact path="/carrito">
-              <CartWidget />
+            <Route exact path="/">
+              <ItemListContainer />
             </Route>
         </Switch>
       </div>
     </BrowserRouter>
   );
 }
-
 export default App;
